@@ -1,10 +1,10 @@
 import article1 from '../articles/article1.md'
 import article2 from '../articles/article2.md'
 import Article from './article';
-import image1 from '../images/article1_station_Basel_SBB.jpg'
-import image2 from '../images/article1_SBB_banner.png'
-import image3 from '../images/Article3_DB_176213.png'
-import image4 from '../images/Article3_Paris_gare_nord.jpeg'
+import image1 from '../images/article1SBB.png'
+import image2 from '../images/article2StationBaselSBB.jpg'
+import image3 from '../images/Article3DB176213.png'
+import image4 from '../images/Article4ParisGareNord.jpeg'
 const getArticles = () => {
 
     let articles = new Array;

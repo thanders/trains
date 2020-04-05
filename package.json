@@ -1,10 +1,14 @@
 {
+  "homepage": "https://thanders.github.io/trains/",
   "name": "trains",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode development",
     "start": "webpack-dev-server --mode development --open --port 3000"
   },
   "author": "",
@@ -17,6 +21,7 @@
     "babel-loader": "^8.1.0",
     "css-loader": "^1.0.1",
     "file-loader": "^6.0.0",
+    "html-webpack-plugin": "^4.0.4",
     "style-loader": "^0.23.1",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11",
@@ -25,6 +30,7 @@
   "dependencies": {
     "@material-ui/core": "^4.9.8",
     "@material-ui/icons": "^4.9.1",
+    "gh-pages": "^2.2.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-markdown": "^4.3.1",
