@@ -63,7 +63,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "eea233778835bfb840d4";
+/******/ 	var hotCurrentHash = "691efd7b9cad24adb5fb";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -4358,7 +4358,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _articles_article1_md__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../articles/article1.md */ \"./src/articles/article1.md\");\n/* harmony import */ var _articles_article2_md__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../articles/article2.md */ \"./src/articles/article2.md\");\n/* harmony import */ var _article__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./article */ \"./src/articleList/article.js\");\n/* harmony import */ var _images_article1_station_Basel_SBB_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../images/article1_station_Basel_SBB.jpg */ \"./src/images/article1_station_Basel_SBB.jpg\");\n/* harmony import */ var _images_article1_SBB_banner_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../images/article1_SBB_banner.png */ \"./src/images/article1_SBB_banner.png\");\n/* harmony import */ var _images_Article3_DB_176213_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../images/Article3_DB_176213.png */ \"./src/images/Article3_DB_176213.png\");\n/* harmony import */ var _images_Article3_Paris_gare_nord_jpeg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../images/Article3_Paris_gare_nord.jpeg */ \"./src/images/Article3_Paris_gare_nord.jpeg\");\n\n\n\n\n\n\n\n\nvar getArticles = function getArticles() {\n  var articles = new Array();\n  var a1 = new _article__WEBPACK_IMPORTED_MODULE_2__[\"default\"]('Basel train station', 'The first blurb', new Date(2020, 3, 28), _articles_article1_md__WEBPACK_IMPORTED_MODULE_0__[\"default\"], _images_article1_station_Basel_SBB_jpg__WEBPACK_IMPORTED_MODULE_3__[\"default\"], 'is in public domain');\n  var a2 = new _article__WEBPACK_IMPORTED_MODULE_2__[\"default\"]('Swiss trains near Zug', 'The second blub', new Date(2020, 3, 28), _articles_article2_md__WEBPACK_IMPORTED_MODULE_1__[\"default\"], _images_article1_SBB_banner_png__WEBPACK_IMPORTED_MODULE_4__[\"default\"], '© SBB CFF FFS');\n  var a3 = new _article__WEBPACK_IMPORTED_MODULE_2__[\"default\"]('DeutscheBahn ICE trains', 'An article about DB ICE', new Date(2020, 3, 29), _articles_article2_md__WEBPACK_IMPORTED_MODULE_1__[\"default\"], _images_Article3_DB_176213_png__WEBPACK_IMPORTED_MODULE_5__[\"default\"], '© Deutsche Bahn AG / Volker Emersleben');\n  var a4 = new _article__WEBPACK_IMPORTED_MODULE_2__[\"default\"]('DeutscheBahn ICE trains', 'An article about DB ICE', new Date(2020, 3, 29), _articles_article2_md__WEBPACK_IMPORTED_MODULE_1__[\"default\"], _images_Article3_Paris_gare_nord_jpeg__WEBPACK_IMPORTED_MODULE_6__[\"default\"], '© Velvet / CC BY-SA (https://creativecommons.org/licenses/by-sa/3.0)');\n  articles.push(a1);\n  articles.push(a2);\n  articles.push(a3);\n  articles.push(a4);\n  return articles;\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (getArticles);\n\n//# sourceURL=webpack:///./src/articleList/articleList.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _articles_article1_md__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../articles/article1.md */ \"./src/articles/article1.md\");\n/* harmony import */ var _articles_article2_md__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../articles/article2.md */ \"./src/articles/article2.md\");\n/* harmony import */ var _article__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./article */ \"./src/articleList/article.js\");\n/* harmony import */ var _images_article1SBB_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../images/article1SBB.png */ \"./src/images/article1SBB.png\");\n/* harmony import */ var _images_article2StationBaselSBB_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../images/article2StationBaselSBB.jpg */ \"./src/images/article2StationBaselSBB.jpg\");\n/* harmony import */ var _images_Article3DB176213_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../images/Article3DB176213.png */ \"./src/images/Article3DB176213.png\");\n/* harmony import */ var _images_Article4ParisGareNord_jpeg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../images/Article4ParisGareNord.jpeg */ \"./src/images/Article4ParisGareNord.jpeg\");\n\n\n\n\n\n\n\n\nvar getArticles = function getArticles() {\n  var articles = new Array();\n  var a1 = new _article__WEBPACK_IMPORTED_MODULE_2__[\"default\"]('Basel train station', 'The first blurb', new Date(2020, 3, 28), _articles_article1_md__WEBPACK_IMPORTED_MODULE_0__[\"default\"], _images_article1SBB_png__WEBPACK_IMPORTED_MODULE_3__[\"default\"], 'is in public domain');\n  var a2 = new _article__WEBPACK_IMPORTED_MODULE_2__[\"default\"]('Swiss trains near Zug', 'The second blub', new Date(2020, 3, 28), _articles_article2_md__WEBPACK_IMPORTED_MODULE_1__[\"default\"], _images_article2StationBaselSBB_jpg__WEBPACK_IMPORTED_MODULE_4__[\"default\"], '© SBB CFF FFS');\n  var a3 = new _article__WEBPACK_IMPORTED_MODULE_2__[\"default\"]('DeutscheBahn ICE trains', 'An article about DB ICE', new Date(2020, 3, 29), _articles_article2_md__WEBPACK_IMPORTED_MODULE_1__[\"default\"], _images_Article3DB176213_png__WEBPACK_IMPORTED_MODULE_5__[\"default\"], '© Deutsche Bahn AG / Volker Emersleben');\n  var a4 = new _article__WEBPACK_IMPORTED_MODULE_2__[\"default\"]('DeutscheBahn ICE trains', 'An article about DB ICE', new Date(2020, 3, 29), _articles_article2_md__WEBPACK_IMPORTED_MODULE_1__[\"default\"], _images_Article4ParisGareNord_jpeg__WEBPACK_IMPORTED_MODULE_6__[\"default\"], '© Velvet / CC BY-SA (https://creativecommons.org/licenses/by-sa/3.0)');\n  articles.push(a1);\n  articles.push(a2);\n  articles.push(a3);\n  articles.push(a4);\n  return articles;\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (getArticles);\n\n//# sourceURL=webpack:///./src/articleList/articleList.js?");
 
 /***/ }),
 
@@ -4422,51 +4422,51 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var reac
 
 /***/ }),
 
-/***/ "./src/images/Article3_DB_176213.png":
-/*!*******************************************!*\
-  !*** ./src/images/Article3_DB_176213.png ***!
-  \*******************************************/
+/***/ "./src/images/Article3DB176213.png":
+/*!*****************************************!*\
+  !*** ./src/images/Article3DB176213.png ***!
+  \*****************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"Article3_DB_176213.png\");\n\n//# sourceURL=webpack:///./src/images/Article3_DB_176213.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"Article3DB176213.png\");\n\n//# sourceURL=webpack:///./src/images/Article3DB176213.png?");
 
 /***/ }),
 
-/***/ "./src/images/Article3_Paris_gare_nord.jpeg":
-/*!**************************************************!*\
-  !*** ./src/images/Article3_Paris_gare_nord.jpeg ***!
-  \**************************************************/
+/***/ "./src/images/Article4ParisGareNord.jpeg":
+/*!***********************************************!*\
+  !*** ./src/images/Article4ParisGareNord.jpeg ***!
+  \***********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"Article3_Paris_gare_nord.jpeg\");\n\n//# sourceURL=webpack:///./src/images/Article3_Paris_gare_nord.jpeg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"Article4ParisGareNord.jpeg\");\n\n//# sourceURL=webpack:///./src/images/Article4ParisGareNord.jpeg?");
 
 /***/ }),
 
-/***/ "./src/images/article1_SBB_banner.png":
-/*!********************************************!*\
-  !*** ./src/images/article1_SBB_banner.png ***!
-  \********************************************/
+/***/ "./src/images/article1SBB.png":
+/*!************************************!*\
+  !*** ./src/images/article1SBB.png ***!
+  \************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"article1_SBB_banner.png\");\n\n//# sourceURL=webpack:///./src/images/article1_SBB_banner.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"article1SBB.png\");\n\n//# sourceURL=webpack:///./src/images/article1SBB.png?");
 
 /***/ }),
 
-/***/ "./src/images/article1_station_Basel_SBB.jpg":
-/*!***************************************************!*\
-  !*** ./src/images/article1_station_Basel_SBB.jpg ***!
-  \***************************************************/
+/***/ "./src/images/article2StationBaselSBB.jpg":
+/*!************************************************!*\
+  !*** ./src/images/article2StationBaselSBB.jpg ***!
+  \************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"article1_station_Basel_SBB.jpg\");\n\n//# sourceURL=webpack:///./src/images/article1_station_Basel_SBB.jpg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"article2StationBaselSBB.jpg\");\n\n//# sourceURL=webpack:///./src/images/article2StationBaselSBB.jpg?");
 
 /***/ }),
 
