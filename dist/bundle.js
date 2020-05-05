@@ -63,7 +63,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "2aa9b4e5db89403648b6";
+/******/ 	var hotCurrentHash = "065297be0a79750b2f22";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -4358,31 +4358,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _articles_article1_md__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../articles/article1.md */ \"./src/articles/article1.md\");\n/* harmony import */ var _articles_article2_md__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../articles/article2.md */ \"./src/articles/article2.md\");\n/* harmony import */ var _article_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./article.js */ \"./src/articleList/article.js\");\n/* harmony import */ var _images_article1SBB_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../images/article1SBB.png */ \"./src/images/article1SBB.png\");\n/* harmony import */ var _images_article2StationBaselSBB_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../images/article2StationBaselSBB.jpg */ \"./src/images/article2StationBaselSBB.jpg\");\n/* harmony import */ var _images_Article3DB176213_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../images/Article3DB176213.png */ \"./src/images/Article3DB176213.png\");\n/* harmony import */ var _images_Article4ParisGareNord_jpeg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../images/Article4ParisGareNord.jpeg */ \"./src/images/Article4ParisGareNord.jpeg\");\n\n\n\n\n\n\n\n\nvar getArticles = function getArticles() {\n  var articles = new Array();\n  var a1 = new _article_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"]('Basel train station', 'The first blurb', new Date(2020, 3, 28), _articles_article1_md__WEBPACK_IMPORTED_MODULE_0__[\"default\"], _images_article1SBB_png__WEBPACK_IMPORTED_MODULE_3__[\"default\"], 'is in public domain');\n  var a2 = new _article_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"]('Swiss trains near Zug', 'The second blub', new Date(2020, 3, 28), _articles_article2_md__WEBPACK_IMPORTED_MODULE_1__[\"default\"], _images_article2StationBaselSBB_jpg__WEBPACK_IMPORTED_MODULE_4__[\"default\"], '© SBB CFF FFS');\n  var a3 = new _article_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"]('DeutscheBahn ICE trains', 'An article about DB ICE', new Date(2020, 3, 29), _articles_article2_md__WEBPACK_IMPORTED_MODULE_1__[\"default\"], _images_Article3DB176213_png__WEBPACK_IMPORTED_MODULE_5__[\"default\"], '© Deutsche Bahn AG / Volker Emersleben');\n  var a4 = new _article_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"]('DeutscheBahn ICE trains', 'An article about DB ICE', new Date(2020, 3, 29), _articles_article2_md__WEBPACK_IMPORTED_MODULE_1__[\"default\"], _images_Article4ParisGareNord_jpeg__WEBPACK_IMPORTED_MODULE_6__[\"default\"], '© Velvet / CC BY-SA (https://creativecommons.org/licenses/by-sa/3.0)');\n  articles.push(a1);\n  articles.push(a2);\n  articles.push(a3);\n  articles.push(a4);\n  return articles;\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (getArticles);\n\n//# sourceURL=webpack:///./src/articleList/articleList.js?");
-
-/***/ }),
-
-/***/ "./src/articles/article1.md":
-/*!**********************************!*\
-  !*** ./src/articles/article1.md ***!
-  \**********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"/articles/article1.md\");\n\n//# sourceURL=webpack:///./src/articles/article1.md?");
-
-/***/ }),
-
-/***/ "./src/articles/article2.md":
-/*!**********************************!*\
-  !*** ./src/articles/article2.md ***!
-  \**********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"/articles/article2.md\");\n\n//# sourceURL=webpack:///./src/articles/article2.md?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _article_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./article.js */ \"./src/articleList/article.js\");\n\nvar article1 = 'trains/articles/article1.md';\nvar article2 = 'trains/articles/article2.md';\nvar image1 = 'trains/images/article1SBB.png';\nvar image2 = 'trains/images/article2StationBaselSBB.jpg';\nvar image3 = 'trains/images/Article3DB176213.png';\nvar image4 = 'trains/images/Article4ParisGareNord.jpeg';\n\nvar getArticles = function getArticles() {\n  var articles = new Array();\n  var a1 = new _article_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"]('Basel train station', 'The first blurb', new Date(2020, 3, 28), article1, image1, 'is in public domain');\n  var a2 = new _article_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"]('Swiss trains near Zug', 'The second blub', new Date(2020, 3, 28), article2, image2, '© SBB CFF FFS');\n  var a3 = new _article_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"]('DeutscheBahn ICE trains', 'An article about DB ICE', new Date(2020, 3, 29), article2, image3, '© Deutsche Bahn AG / Volker Emersleben');\n  var a4 = new _article_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"]('DeutscheBahn ICE trains', 'An article about DB ICE', new Date(2020, 3, 29), article2, image4, '© Velvet / CC BY-SA (https://creativecommons.org/licenses/by-sa/3.0)');\n  articles.push(a1);\n  articles.push(a2);\n  articles.push(a3);\n  articles.push(a4);\n  return articles;\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (getArticles);\n\n//# sourceURL=webpack:///./src/articleList/articleList.js?");
 
 /***/ }),
 
@@ -4419,54 +4395,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var reac
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/core/styles */ \"./node_modules/@material-ui/core/esm/styles/index.js\");\n/* harmony import */ var _material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/AppBar */ \"./node_modules/@material-ui/core/esm/AppBar/index.js\");\n/* harmony import */ var _material_ui_core_Toolbar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/Toolbar */ \"./node_modules/@material-ui/core/esm/Toolbar/index.js\");\n/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/Typography */ \"./node_modules/@material-ui/core/esm/Typography/index.js\");\n/* harmony import */ var _material_ui_core_Button__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core/Button */ \"./node_modules/@material-ui/core/esm/Button/index.js\");\n/* harmony import */ var react_router__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-router */ \"./node_modules/react-router/esm/react-router.js\");\n/* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/core/Grid */ \"./node_modules/@material-ui/core/esm/Grid/index.js\");\n\n\n\n\n\n\n\n\nvar linkStyle = {\n  textDecoration: 'none',\n  color: 'white'\n};\nvar useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__[\"makeStyles\"])(function (theme) {\n  return {\n    root: {\n      flexGrow: 1\n    },\n    menuButton: {\n      marginRight: theme.spacing(2)\n    },\n    title: {\n      flexGrow: 1\n    }\n  };\n});\n\nvar Nav = function Nav() {\n  var history = Object(react_router__WEBPACK_IMPORTED_MODULE_6__[\"useHistory\"])();\n\n  var handleClick = function handleClick(choice) {\n    if (choice == null) {\n      history.push(\"/browse\");\n    }\n\n    if (choice == 'tickets') {\n      history.push(\"/tickets\");\n    }\n  };\n\n  var classes = useStyles();\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n    className: classes.root\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_2__[\"default\"], {\n    position: \"static\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Toolbar__WEBPACK_IMPORTED_MODULE_3__[\"default\"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_7__[\"default\"], {\n    container: true,\n    spacing: 1,\n    className: classes.article,\n    style: {\n      cursor: 'pointer'\n    }\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_7__[\"default\"], {\n    item: true,\n    xs: 7,\n    sm: 9,\n    spacing: 10\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4__[\"default\"], {\n    variant: \"h6\",\n    className: classes.title,\n    onClick: function onClick() {\n      return handleClick();\n    }\n  }, \"Rail Culture\")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_7__[\"default\"], {\n    item: true,\n    xs: 2,\n    sm: 1,\n    spacing: 10\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_5__[\"default\"], {\n    onClick: function onClick() {\n      return handleClick('tickets');\n    },\n    color: \"inherit\"\n  }, \"Tickets\")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_7__[\"default\"], {\n    item: true,\n    xs: 2,\n    sm: 2,\n    spacing: 10\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_5__[\"default\"], {\n    color: \"inherit\"\n  }, \"Travel insurance\"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_2__[\"default\"], {\n    color: \"secondary\",\n    position: \"static\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Toolbar__WEBPACK_IMPORTED_MODULE_3__[\"default\"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_5__[\"default\"], {\n    color: \"inherit\"\n  }, \"Train stations\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_5__[\"default\"], {\n    color: \"inherit\"\n  }, \"Heritage trains\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_5__[\"default\"], {\n    color: \"inherit\"\n  }, \"Technology\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_5__[\"default\"], {\n    color: \"inherit\"\n  }, \"News\"))));\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Nav);\n\n//# sourceURL=webpack:///./src/components/nav.jsx?");
-
-/***/ }),
-
-/***/ "./src/images/Article3DB176213.png":
-/*!*****************************************!*\
-  !*** ./src/images/Article3DB176213.png ***!
-  \*****************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"/images/Article3DB176213.png\");\n\n//# sourceURL=webpack:///./src/images/Article3DB176213.png?");
-
-/***/ }),
-
-/***/ "./src/images/Article4ParisGareNord.jpeg":
-/*!***********************************************!*\
-  !*** ./src/images/Article4ParisGareNord.jpeg ***!
-  \***********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"/images/Article4ParisGareNord.jpeg\");\n\n//# sourceURL=webpack:///./src/images/Article4ParisGareNord.jpeg?");
-
-/***/ }),
-
-/***/ "./src/images/article1SBB.png":
-/*!************************************!*\
-  !*** ./src/images/article1SBB.png ***!
-  \************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"/images/article1SBB.png\");\n\n//# sourceURL=webpack:///./src/images/article1SBB.png?");
-
-/***/ }),
-
-/***/ "./src/images/article2StationBaselSBB.jpg":
-/*!************************************************!*\
-  !*** ./src/images/article2StationBaselSBB.jpg ***!
-  \************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"/images/article2StationBaselSBB.jpg\");\n\n//# sourceURL=webpack:///./src/images/article2StationBaselSBB.jpg?");
 
 /***/ }),
 
