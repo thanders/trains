@@ -19,18 +19,17 @@ const useStyles = makeStyles((theme) => ({
 
 const ArticleBrowse = (props) => {
 
-    const [articles, setArticle] = useState(null);
+    const [articles, setArticles] = useState([]);
     const classes = useStyles();
     useEffect(() => {
-        setArticle(props.articles)
-        console.log({articles})
+        setArticles(props.articles)
       });
 
       const handleClick = (choice) => {
         props.choice(choice)
       }
 
-    if (articles != null)
+    if (articles.length >0)
         return(
     <Grid container spacing={3} className={classes.article} style={{cursor: 'pointer'}}>
         {articles.map((article, index) => (
@@ -51,9 +50,10 @@ const ArticleBrowse = (props) => {
                         component="img"
                         alt="SBB Trains"
                         height="100"
-                        image={article.banner}
                         title={article.bannerCopywrite}
-                    />
+                        src={article.banner}
+                    >
+                    </CardMedia>
                 </Card>
                 </Link>
             </Grid>

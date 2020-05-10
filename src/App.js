@@ -22,7 +22,7 @@ const App =() => {
 
     return(
       <div className="App">
-        <Router>
+        <Router basename='trains'>
         <Nav/>
 
         <Switch>

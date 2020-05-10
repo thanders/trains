@@ -20,9 +20,10 @@ const ArticleDisplay = (props) => {
 
     const [article, setArticle] = useState(null);
     const classes = useStyles();
+    console.log('Testing...', props.banner.value);
 
     useEffect(() => {
-
+        console.log('fetching url', props.file);
         fetch(props.file)
         .then(res => res.text())
         .then(text => {
@@ -36,7 +37,7 @@ return(
           component="img"
           alt="SBB Trains"
           height="250"
-          image={props.banner}
+          src={props.banner}
           title={props.bannerCopywrite}
         />
         image {props.bannerCopywrite}

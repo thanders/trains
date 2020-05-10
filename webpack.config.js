@@ -1,18 +1,17 @@
-const path = require("path");
+const resolve = require('path').resolve;
 const webpack = require("webpack");
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
+  
   entry: "./src/index.js",
     output: {
-    path: path.resolve(__dirname, 'dist'),
-    publicPath: "dist/",
-    filename: "bundle.js"
+      path: resolve(__dirname, 'dist'),
+      filename: "bundle.js"
   },
   devServer: {
-    contentBase: path.join(__dirname, "dist/"),
+    contentBase: resolve(__dirname, 'dist'),
     port: 3000,
-    publicPath: "dist/",
     hotOnly: true
   },
   mode: "development",
@@ -29,11 +28,22 @@ module.exports = {
         use: ["style-loader", "css-loader"]
       },
       {
-        test: /\.(eot|md|svg|png|jpe?g|gif)$/,
+        test: /\.(eot|svg|png|jpe?g|gif)$/,
         use: {
           loader: 'file-loader',
           options: {
             name: '[name].[ext]',
+            outputPath: 'images',
+          },
+        },
+      },
+      {
+        test: /\.(md)$/,
+        use: {
+          loader: 'file-loader',
+          options: {
+            name: '[name].[ext]',
+            outputPath: 'articles',
           },
         },
       },

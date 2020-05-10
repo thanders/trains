@@ -4,12 +4,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
-import {Link,} from "react-router-dom";
-
-const linkStyle={
-  textDecoration: 'none',
-  color: 'white',
-}
+import {useHistory} from "react-router-dom";
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -24,20 +19,32 @@ const useStyles = makeStyles(theme => ({
   }));
   
   const Nav = () => {
+
+    let history = useHistory();
+    const routeHandler = (input) =>{
+
+      if(input === 'home'){
+        history.push("/")
+      }
+
+      if(input === 'tickets'){
+        history.push("/tickets")
+      }
+      
+    }
+
     const classes = useStyles();
     return(
       <div className={classes.root}>
         <AppBar position="static">
           <Toolbar>
-            <Link to="/" style={linkStyle}>
-              <Typography variant="h6" className={classes.title}>
-              Railroad enthusiasts
+            
+              <Typography variant="h6" onClick={() => routeHandler('home')} className={classes.title}>
+              Rail Exp
               </Typography>
-            </Link>
-            <Link to="/tickets" style={linkStyle}>
+          
 
-            <Button color="inherit">Tickets</Button>
-            </Link>
+            <Button color="inherit" onClick={() => routeHandler('tickets')}>Tickets</Button>
             <Button color="inherit">Travel insurance</Button>
           </Toolbar>
         </AppBar>
