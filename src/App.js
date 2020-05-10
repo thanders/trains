@@ -3,14 +3,11 @@ import "./App.css";
 import Nav from "./components/nav";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import ArticleBrowse from "./components/ArticlesBrowse/ArticleBrowse";
-import getArticles from './articleList/articleList';
 import ArticleDisplay from './components/ArticleDisplay/ArticleDisplay';
 
 const App =() => {
 
-    const articles = getArticles();
-
-    const [choice, setChoice] = useState(articles[0]);
+    const [choice, setChoice] = useState([]);
   
     const chooseArticle = (input) =>{
       setChoice(input)
@@ -27,7 +24,7 @@ const App =() => {
 
         <Switch>
           <Route exact path="/">
-            <ArticleBrowse articles={articles} choice={chooseArticle} />
+            <ArticleBrowse choice={chooseArticle} />
           </Route>
           <Route exact path="/tickets">
             <p>Tickets</p>

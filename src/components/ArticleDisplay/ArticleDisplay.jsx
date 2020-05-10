@@ -37,7 +37,7 @@ return(
           component="img"
           alt="SBB Trains"
           height="250"
-          src={props.banner}
+          image={props.banner}
           title={props.bannerCopywrite}
         />
         image {props.bannerCopywrite}

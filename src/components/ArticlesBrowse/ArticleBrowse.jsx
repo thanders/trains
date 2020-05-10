@@ -5,6 +5,7 @@ import Card from '@material-ui/core/Card';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import {Link,} from "react-router-dom";
+import getArticles from '../../articleList/articleList';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -19,16 +20,17 @@ const useStyles = makeStyles((theme) => ({
 
 const ArticleBrowse = (props) => {
 
+
     const [articles, setArticles] = useState([]);
     const classes = useStyles();
     useEffect(() => {
-        setArticles(props.articles)
-      });
+        setArticles(() => getArticles());
+      }, []);
 
       const handleClick = (choice) => {
         props.choice(choice)
       }
-
+    console.log('length of articles is', articles)
     if (articles.length >0)
         return(
     <Grid container spacing={3} className={classes.article} style={{cursor: 'pointer'}}>
@@ -62,11 +64,7 @@ const ArticleBrowse = (props) => {
     </Grid>
      )
      else{
-         return(
-            <div>
-            <p>my </p>
-        </div>
-         )
+        setArticles(() => getArticles());
      }
 }
 
