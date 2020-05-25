@@ -1,4 +1,5 @@
 import Article from './article';
+import TrainStation from '../dataClasses/trainStation';
 
 const article1 = require('../articles/article1.md');
 const article2 = require('../articles/article2.md');
@@ -21,7 +22,7 @@ const getArticles = () => {
 
     let articles = new Array;
 
-    const a1 = new Article(
+    let a1 = new Article(
         'Basel train station',
         'The first blurb',
         new Date(2020, 3, 28), articleURL1, imageURL1,
@@ -45,6 +46,19 @@ const getArticles = () => {
         articleURL2, imageURL4,
         '© Velvet / CC BY-SA (https://creativecommons.org/licenses/by-sa/3.0)');
     
+        const t1 = new TrainStation('Bern', 1858, '12 + 4 other', '17 + 4');
+        console.log(t1);
+        a1.trainStation = t1;
+        console.log('This is the train station', a1.trainStation);
+        const contactInfo ={
+            'Swiss Federal Railways': 'https://www.sbb.ch',
+            'Trainstation website': 'https://www.sbb.ch/en/station-services/am-bahnhof/railway-stations/bern-station.html'
+        }
+        a1.trainStation.contactInfo = contactInfo;
+        a1.trainStation.bathrooms= 2;
+        a1.trainStation.architect= 'John Doe';
+        a1.trainStation.wifi= 'Yes';
+
     articles.push(a1);
     articles.push(a2);
     articles.push(a3);

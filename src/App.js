@@ -1,9 +1,9 @@
 import React, { useState} from "react";
 import "./App.css";
-import Nav from "./components/nav";
+import Nav from "./containers/nav";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import ArticleBrowse from "./components/ArticlesBrowse/ArticleBrowse";
-import ArticleDisplay from './components/ArticleDisplay/ArticleDisplay';
+import ArticleBrowse from "./containers/ArticlesBrowse/ArticleBrowse";
+import ArticleDisplay from './containers/ArticleDisplay/ArticleDisplay';
 
 const App =() => {
 
