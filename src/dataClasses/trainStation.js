@@ -1,11 +1,9 @@
 export default class TrainStation {
 
-  constructor(name, dateOpened, platforms, tracks) {
+  constructor(name, overview) {
 
     this.name = name;
-    this.dateOpened = dateOpened;
-    this.platforms = platforms
-    this.tracks = tracks
+    this.overview = overview;
   }
 
   // setter
@@ -14,8 +12,8 @@ export default class TrainStation {
   }
 
   // setter
-  set dateOpened(dateOpened) {
-    this._dateOpened = dateOpened;
+  set overview(overview) {
+    this._overview = overview;
   }
 
   // setter

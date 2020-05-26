@@ -46,14 +46,21 @@ const getArticles = () => {
         articleURL2, imageURL4,
         '© Velvet / CC BY-SA (https://creativecommons.org/licenses/by-sa/3.0)');
     
-        const t1 = new TrainStation('Bern', 1858, '12 + 4 other', '17 + 4');
-        console.log(t1);
+        const overview = {
+            Location: 'Bern, Switzerland',
+            'Year opened': '1858',
+            Platforms: '12 + 4 other',
+            Tracks: '17',
+        }
+        const t1 = new TrainStation('Bern station', overview);
+
         a1.trainStation = t1;
-        console.log('This is the train station', a1.trainStation);
+
         const contactInfo ={
             'Swiss Federal Railways': 'https://www.sbb.ch',
             'Trainstation website': 'https://www.sbb.ch/en/station-services/am-bahnhof/railway-stations/bern-station.html'
         }
+
         a1.trainStation.contactInfo = contactInfo;
         a1.trainStation.bathrooms= 2;
         a1.trainStation.architect= 'John Doe';

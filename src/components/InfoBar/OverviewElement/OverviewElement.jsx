@@ -18,11 +18,11 @@ const useStyles = makeStyles({
     },
     names: {
       paddingTop: '7px',
-      width: '60px',
+      width: '100px',
     },
   });
 
-const InfoElement = (props) => {
+const OverviewElement = (props) => {
 
     const classes = useStyles();
 
@@ -30,11 +30,11 @@ const InfoElement = (props) => {
       <Fragment>
         <Grid container className={classes.root}>
           <Grid item lg={2} className={classes.names}>
-            {props.name}
+            {props.label}
           </Grid>
           <Grid item lg={8}>
-            <ListItem button component="a" href={props.value} target='_blank'>
-              <ListItemText primary={props.label} />
+            <ListItem>
+              <ListItemText primary={props.value} />
             </ListItem>
           </Grid>
         </Grid>
@@ -42,4 +42,4 @@ const InfoElement = (props) => {
     )
 }
 
-export default InfoElement;
+export default OverviewElement;
