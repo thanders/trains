@@ -34,8 +34,8 @@ const ArticleDisplay = (props) => {
 
 return(
   <Fragment>
-    <Grid container>
-      <Grid item xs={8} md={8}>
+    <Grid container justify="space-between">
+      <Grid item xs={12} md={8} lg={8}>
         <Card style={container} className={classes.root}>
             <CardMedia
               component="img"
@@ -55,9 +55,11 @@ return(
             </CardContent>
         </Card>
       </Grid>
-      <Grid item xs={4} md={4}>
-        <TrainStation trainStation= {props.trainStation} />
-      </Grid>
+      {props.trainStation ?
+        <Grid item xs={7} md={4} lg={4}>
+          <TrainStation trainStation= {props.trainStation} />
+        </Grid>
+        : null}
     </Grid>
   </Fragment>
 )

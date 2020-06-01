@@ -1,9 +1,10 @@
 export default class TrainStation {
 
-  constructor(name, overview) {
+  constructor(name, overview, ammenities) {
 
     this.name = name;
     this.overview = overview;
+    this.ammenities = ammenities;
   }
 
   // setter
@@ -17,6 +18,11 @@ export default class TrainStation {
   }
 
   // setter
+  set ammenities(ammenities) {
+    this._ammenities = ammenities;
+  }
+
+  // setter
   set contactInfo(contactInfo) {
     this._contactInfo = contactInfo;
   }
@@ -24,31 +30,6 @@ export default class TrainStation {
   // setter
   set architect(architect) {
     this._architect = architect;
-  }
-
-  // setter
-  set website(website) {
-    this._website = website;
-  }
-
-  // setter
-  set tracks(tracks) {
-    this._tracks = tracks;
-  }
-
-  // setter
-  set bathrooms(bathrooms) {
-    this._bathrooms = bathrooms;
-  }
-
-  // setter
-  set wifi(wifi) {
-    this._wifi = wifi;
-  }
-
-  // setter
-  set wifi(ownerSite) {
-    this._ownerSite = ownerSite;
   }
 
 }

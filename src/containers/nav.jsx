@@ -5,7 +5,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import {useHistory} from "react-router-dom";
-
+import ThemeSwitch  from '../components/ThemeSwitch/ThemeSwitch';
 const useStyles = makeStyles(theme => ({
     root: {
       flexGrow: 1,
@@ -18,7 +18,7 @@ const useStyles = makeStyles(theme => ({
     },
   }));
   
-  const Nav = () => {
+  const Nav = (props) => {
 
     let history = useHistory();
     const routeHandler = (input) =>{
@@ -51,10 +51,13 @@ const useStyles = makeStyles(theme => ({
 
         <AppBar color="secondary" position="static">
           <Toolbar>
-            <Button color="inherit">Train stations</Button>
-            <Button color="inherit">Heritage trains</Button>
-            <Button color="inherit">Technology</Button>
-            <Button color="inherit">News</Button>
+            <Typography type="title" color="inherit" style={{ flex: 1 }}>
+              <Button color="inherit">Train stations</Button>
+              <Button color="inherit">Heritage trains</Button>
+              <Button color="inherit">Technology</Button>
+              <Button color="inherit">News</Button>
+            </Typography>
+            <ThemeSwitch themeChange={props.themeChange}></ThemeSwitch>
           </Toolbar>
         </AppBar>
       </div>

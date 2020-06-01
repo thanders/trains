@@ -36,6 +36,12 @@ return(
             <Typography gutterBottom component="body1">
                 <Grid item lg={12}>
                     <InfoBar stationObj={props.trainStation._overview} stationName={props.trainStation._name} type='overview' />
+                    
+                    <div className={classes.divider}>
+                        <Divider variant="middle" />
+                    </div>
+                    <InfoBar stationAmmenities={props.trainStation._ammenities} type='ammenities' />
+
                     <div className={classes.divider}>
                         <Divider variant="middle" />
                     </div>
