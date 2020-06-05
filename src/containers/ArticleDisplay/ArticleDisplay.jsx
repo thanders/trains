@@ -57,9 +57,6 @@ return(
             */}
 
         <CardContent>
-            <Typography gutterBottom variant="h5" component="h2">
-            {props.title}
-            </Typography>
           <Typography variant="body2" color="textSecondary" component="div">
             <ReactMarkdown source={article} />
           </Typography>
