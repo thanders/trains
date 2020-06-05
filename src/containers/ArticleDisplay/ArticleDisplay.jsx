@@ -37,6 +37,15 @@ return(
     <Grid container justify="space-between">
       <Grid item xs={12} md={8} lg={8}>
         <Card style={container} className={classes.root}>
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="h2">
+            {props.title}
+          </Typography>
+          <Typography paragraph variant="body1" color="textSecondary" component="div">
+          {props.blurb}
+          </Typography>
+        </CardContent>
+            {/*
             <CardMedia
               component="img"
               alt="SBB Trains"
@@ -45,18 +54,20 @@ return(
               title={props.bannerCopywrite}
             />
             image {props.bannerCopywrite}
-            <CardContent>
-                <Typography gutterBottom variant="h5" component="h2">
-                {props.title}
-                </Typography>
-              <Typography variant="body2" color="textSecondary" component="div">
-                <ReactMarkdown source={article} />
-              </Typography>
-            </CardContent>
-        </Card>
-      </Grid>
-      {props.trainStation ?
-        <Grid item xs={7} md={4} lg={4}>
+            */}
+
+        <CardContent>
+            <Typography gutterBottom variant="h5" component="h2">
+            {props.title}
+            </Typography>
+          <Typography variant="body2" color="textSecondary" component="div">
+            <ReactMarkdown source={article} />
+          </Typography>
+        </CardContent>
+      </Card>
+    </Grid>
+    {props.trainStation ?
+    <Grid item xs={7} md={4} lg={4}>
           <TrainStation trainStation= {props.trainStation} />
         </Grid>
         : null}
