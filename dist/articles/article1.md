@@ -151,6 +151,8 @@ and images can be specified like so:
 ![GitHub Logo](/images/stationBaselSBB.jpg)
 Format: ![Alt Text](url)
 
+![image info](../images/stationBaselSBB.jpg)
+
 Inline math equations go in like so: $\omega = d\phi / dt$. Display
 math should get its own line and be put in in double-dollarsigns:
 
