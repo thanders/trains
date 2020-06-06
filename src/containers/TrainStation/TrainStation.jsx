@@ -8,10 +8,6 @@ import InfoBar from '../../components/InfoBar/InfoBar';
 import Divider from '@material-ui/core/Divider';
 import { useTheme } from '@material-ui/core/styles';
 
-const container= {
-    margin: '30px 0px 0px 0px'
-}
-
 const TrainStation = (props) => {
 
     const theme = useTheme();
@@ -35,7 +31,7 @@ const TrainStation = (props) => {
 
 return(
   <Fragment>
-    <Card style={container}className={classes.root}>
+    <Card className={classes.root}>
         <CardContent>
             <Typography gutterBottom component="body1">
                 <Grid item lg={12}>

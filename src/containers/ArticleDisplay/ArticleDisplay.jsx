@@ -16,12 +16,14 @@ const ArticleDisplay = (props) => {
   const [article, setArticle] = useState(null);
 
   const useStyles = makeStyles({
+
     container: {
-      margin: '30px 0px 0px 0px'
+      marginTop: 50,
     },
     root: {
       maxWidth: 700,
       backgroundColor: accentMain,
+      marginBottom: 20
     },
   });
 
@@ -39,7 +41,7 @@ const ArticleDisplay = (props) => {
 return(
   <Fragment>
     <Grid container justify="space-between" className={classes.container}>
-      <Grid item xs={12} md={8} lg={8}>
+      <Grid item xs={12} sm={12} md={8} lg={8}>
         <Card className={classes.root}>
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
@@ -68,7 +70,7 @@ return(
       </Card>
     </Grid>
     {props.trainStation ?
-    <Grid item xs={7} md={4} lg={4}>
+    <Grid item xs={7} sm={7} md={4} lg={4}>
           <TrainStation trainStation= {props.trainStation} />
         </Grid>
         : null}
