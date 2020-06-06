@@ -6,20 +6,25 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import {Link,} from "react-router-dom";
 import getArticles from '../../articleList/articleList';
+import { useTheme } from '@material-ui/core/styles';
 
-const useStyles = makeStyles((theme) => ({
-    root: {
-        flexGrow: 1,
-    },
-    article: {
-        padding: theme.spacing(2),
-        textAlign: 'center',
-        color: theme.palette.text.secondary,
-    },
-  }));
 
 const ArticleBrowse = (props) => {
 
+    const theme = useTheme();
+    const accentMain = theme.palette.accent.main;
+
+    const useStyles = makeStyles((theme) => ({
+        root: {
+            flexGrow: 1,
+            backgroundColor: accentMain
+        },
+        article: {
+            padding: theme.spacing(2),
+            textAlign: 'center',
+            color: theme.palette.text.secondary,
+        },
+      }));
 
     const [articles, setArticles] = useState([]);
     const classes = useStyles();

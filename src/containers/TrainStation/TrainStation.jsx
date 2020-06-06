@@ -6,27 +6,31 @@ import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import InfoBar from '../../components/InfoBar/InfoBar';
 import Divider from '@material-ui/core/Divider';
-import Box from '@material-ui/core/Box';
-import { sizing } from '@material-ui/system';
+import { useTheme } from '@material-ui/core/styles';
 
 const container= {
     margin: '30px 0px 0px 0px'
 }
 
-const useStyles = makeStyles({
-    root: {
-        padding: '0px',
-        margin: '0px'
-    },
-    divider: {
-        backgroundColor: 'blue',
-        margin: '20px'
-    },
-  });
-
 const TrainStation = (props) => {
 
-    const classes = useStyles();
+    const theme = useTheme();
+    const accentMain = theme.palette.accent.main;
+
+    const useStyles = makeStyles({
+        root: {
+            padding: '0px',
+            margin: '0px',
+            backgroundColor: accentMain
+        },
+        divider: {
+            backgroundColor: 'blue',
+            margin: '20px'
+        },
+      });
+
+      const classes = useStyles();
+
     console.log('TS....', props.trainStation);
 
 return(
