@@ -7,6 +7,8 @@ import TrainStation from '../TrainStation/TrainStation';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 import { useTheme } from '@material-ui/core/styles';
+import Advertisement from '../../components/Advertisement/Advertisement';
+import Footer from '../../components/Footer/Footer';
 
 const ArticleDisplay = (props) => {
 
@@ -41,7 +43,7 @@ const ArticleDisplay = (props) => {
 return(
   <Fragment>
     <Grid container justify="space-between" className={classes.container}>
-      <Grid item xs={12} sm={12} md={8} lg={8}>
+      <Grid item xs={12} sm={12} md={8}>
         <Card className={classes.root}>
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
@@ -70,11 +72,18 @@ return(
       </Card>
     </Grid>
     {props.trainStation ?
-    <Grid item xs={7} sm={7} md={4} lg={4}>
+    <Grid item xs={12} sm={12} md={4}>
           <TrainStation trainStation= {props.trainStation} />
-        </Grid>
-        : null}
     </Grid>
+        : null}
+  </Grid>
+
+  <Grid item xs={12} sm={12} md={12} lg={12}>
+          <Advertisement />
+    </Grid>
+
+    <Footer />
+    
   </Fragment>
 )
 }

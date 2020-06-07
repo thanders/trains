@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import ArticleBrowse from "./containers/ArticlesBrowse/ArticleBrowse";
 import ArticleDisplay from './containers/ArticleDisplay/ArticleDisplay';
 import {createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
-import { lightBlue, blueGrey, brown, grey } from "@material-ui/core/colors";
+import { white, blueGrey, brown, grey } from "@material-ui/core/colors";
 
 
 const App =() => {
@@ -24,12 +24,14 @@ const App =() => {
     const lightSecondaryColor = darkState ? brown[500] : brown[500];
 
     const accentMainColor = darkState ? grey[800] : grey[300];
+    const text = darkState ? grey[100] : grey[300];
     const darkTheme = createMuiTheme({
       palette: {
         type: palletType,
         primary: {
           main: mainPrimaryColor,
           light: lightPrimaryColor,
+          contrastText: text
         },
         secondary: {
           main: mainSecondaryColor,

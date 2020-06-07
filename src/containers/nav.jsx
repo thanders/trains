@@ -40,7 +40,7 @@ const useStyles = makeStyles(theme => ({
           <Toolbar>
             
               <Typography variant="h6" onClick={() => routeHandler('home')} className={classes.title}>
-              Rail Exp
+              Placeholder
               </Typography>
           
 
