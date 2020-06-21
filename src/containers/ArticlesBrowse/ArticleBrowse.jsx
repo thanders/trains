@@ -7,7 +7,7 @@ import Typography from '@material-ui/core/Typography';
 import {Link,} from "react-router-dom";
 import getArticles from '../../articleList/articleList';
 import { useTheme } from '@material-ui/core/styles';
-
+import LoaderTrain  from '../LoaderTrain/LoaderTrain';
 
 const ArticleBrowse = (props) => {
 
@@ -63,9 +63,9 @@ const ArticleBrowse = (props) => {
                     </CardMedia>
                 </Card>
                 </Link>
-            </Grid>
-            
+            </Grid>            
         ))}
+        <LoaderTrain />
     </Grid>
      )
      else{
