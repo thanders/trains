@@ -1,7 +1,6 @@
 import React, {Fragment} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import './train.css';
-import { css } from 'styled-components';
 
 const Train = (props) => {
 
@@ -16,11 +15,13 @@ const useStyles = makeStyles({
   }
 });
 
-  const css = useStyles();
+const css = useStyles();
+const wrapperType = 'wrapperLarge';
+  
 return(
   <Fragment>
     <div className={css.container}>
-      <div id="wrapper">
+      <div id='wrapper'>
       <div id="pipe"></div>
       <div id="main-fog"></div>
       <div class="alt-fog nth1"></div>

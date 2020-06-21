@@ -21,6 +21,8 @@ const SmokeR = keyframes`
 `;
 
 const left = '91px';
+const leftSmall = '220px';
+const bottomSmall= '75px';
 const bottom = '100px';
 
 const Smoke0 = styled.div`
@@ -40,6 +42,10 @@ const Smoke0 = styled.div`
   animation-delay: 0s;
   animation-iteration-count: infinite;
   transform: scale(0.2);
+  @media only screen and (max-width: 700px) {
+    left: ${leftSmall};
+    bottom: ${bottomSmall};
+  }
 `
 const Smoke1 = styled.div`
   display: block;
@@ -58,6 +64,10 @@ const Smoke1 = styled.div`
   animation-delay: 1s;
   animation-iteration-count: infinite;
   transform: scale(0.2);
+  @media only screen and (max-width: 700px) {
+    left: ${leftSmall};
+    bottom: ${bottomSmall};
+  }
   `
   const Smoke2 = styled.div`
   display: block;
@@ -76,6 +86,10 @@ const Smoke1 = styled.div`
   animation-delay: 2s;
   animation-iteration-count: infinite;
   transform: scale(0.2);
+  @media only screen and (max-width: 700px) {
+    left: ${leftSmall};
+    bottom: ${bottomSmall};
+  }
   `
   const Smoke3 = styled.div`
   display: block;
@@ -94,6 +108,10 @@ const Smoke1 = styled.div`
   animation-delay: 3s;
   animation-iteration-count: infinite;
   transform: scale(0.2);
+  @media only screen and (max-width: 700px) {
+    left: ${leftSmall};
+    bottom: ${bottomSmall};
+  }
   `
   const Smoke4 = styled.div`
   display: block;
@@ -112,6 +130,10 @@ const Smoke1 = styled.div`
   animation-delay: 4s;
   animation-iteration-count: infinite;
   transform: scale(0.2);
+  @media only screen and (max-width: 700px) {
+    left: ${leftSmall};
+    bottom: ${bottomSmall};
+  }
   `
   const Smoke5 = styled.div`
   display: block;
@@ -130,6 +152,10 @@ const Smoke1 = styled.div`
   animation-delay: 5s;
   animation-iteration-count: infinite;
   transform: scale(0.2);
+  @media only screen and (max-width: 700px) {
+    left: ${leftSmall};
+    bottom: ${bottomSmall};
+  }
   `
   const Smoke6 = styled.div`
   display: block;
@@ -148,6 +174,10 @@ const Smoke1 = styled.div`
   animation-delay: 6s;
   animation-iteration-count: infinite;
   transform: scale(0.2);
+  @media only screen and (max-width: 700px) {
+    left: ${leftSmall};
+    bottom: ${bottomSmall};
+  }
   `
   const Smoke7 = styled.div`
   display: block;
@@ -184,6 +214,10 @@ const Smoke1 = styled.div`
   animation-delay: 8s;
   animation-iteration-count: infinite;
   transform: scale(0.2);
+  @media only screen and (max-width: 700px) {
+    left: ${leftSmall};
+    bottom: ${bottomSmall};
+  }
   `
   const Smoke9 = styled.div`
   display: block;
@@ -202,6 +236,10 @@ const Smoke1 = styled.div`
   animation-delay: 9s;
   animation-iteration-count: infinite;
   transform: scale(0.2);
+    @media only screen and (max-width: 700px) {
+    left: ${leftSmall};
+    bottom: ${bottomSmall};
+  }
   `
 
 const useStyles = makeStyles({

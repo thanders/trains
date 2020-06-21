@@ -4,6 +4,7 @@ import { useTheme } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Smoke from './Smoke/Smoke';
 import Train from './Train/Train';
+
 const LoaderTrain = (props) => {
 
   const useStyles = makeStyles({
@@ -32,11 +33,11 @@ const LoaderTrain = (props) => {
     },
   });
 
-  const classes = useStyles();
+  const css = useStyles();
 return(
   <Fragment>
-    <Grid container className={classes.container} xs={12} md={12} spacing={4} justify="space-between">
-      <div className={classes.trainRoot}>
+    <Grid container className={css.container} xs={12} md={12} spacing={4} justify="space-between">
+      <div className={css.trainRoot}>
           <Smoke />
           <Train />
       </div>
