@@ -58,8 +58,8 @@ return(
       </div>
 
       <div id="title">
-        <h2>Pure CSS3 Classic Train</h2>
-        No images. Believe me! &#169; 5 December 2011 - <a href="https://plus.google.com/108949996304093815163/about">Taufik Nurrohman</a>
+        <h2>Loading...</h2>
+        &#169; 5 December 2011 {/*- <a href=""></a> */}
       </div>
 
       <div class="foot left"></div>
