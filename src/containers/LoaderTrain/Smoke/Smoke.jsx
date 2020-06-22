@@ -196,6 +196,10 @@ const Smoke1 = styled.div`
   animation-delay: 7s;
   animation-iteration-count: infinite;
   transform: scale(0.2);
+  @media only screen and (max-width: 700px) {
+    left: ${leftSmall};
+    bottom: ${bottomSmall};
+  }
   `
   const Smoke8 = styled.div`
   display: block;
@@ -236,7 +240,7 @@ const Smoke1 = styled.div`
   animation-delay: 9s;
   animation-iteration-count: infinite;
   transform: scale(0.2);
-    @media only screen and (max-width: 700px) {
+  @media only screen and (max-width: 700px) {
     left: ${leftSmall};
     bottom: ${bottomSmall};
   }
